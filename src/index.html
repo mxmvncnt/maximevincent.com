@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/blur_effect.css">
+    <link rel="stylesheet" href="./css/disappear_effect.css">
+    <title>Maxime Vincent</title>
+</head>
+
+<body onload="unblur('title')">
+    <header>
+        <h1 id="title" onclick="restartAnimation('title')">Maxime Vincent</h1>
+    </header>
+
+    <div class="content">
+        <p>Étudiant en informatique à Montréal</p>
+        <h3>Visitez mes profils!</h3>
+        <a href="https://github.com/mxmvncnt" target="_blank">GitHub</a> <br>
+        <a href="https://codeberg.org/MXMVNCNT" target="_blank">Codeberg</a> <br>
+        <a href="https://www.linkedin.com/in/mxmvncnt/" target="_blank">LinkedIn</a> <br>
+    
+        <h2>Mes projets</h2>
+
+        <div class="projet">
+            <h3>Klemn</h3>
+            <p>Réseau social pour les programmeurs et les autres personnes en informatique. Le site/service comprendra des
+                fonctionnalités de réseautage, d'entraide ainsi que de coopération sur des projets via une intégration de
+                l'API de GitHub (ou autre fournisseur Git).</p>
+            <ul>
+                <li><a href="https://klemn.net" target="_blank">Visiter le site</a></li>
+                <li><a href="https://github.com/mxmvncnt/klemn" target="_blank">Voir le code source (fork publique)</a>
+                <li><a href="https://klemn.gitbook.io/docs/" target="_blank">Documentation GitBook</a>
+            </ul>
+        </div>
+    
+    
+        <div class="projet">
+            <h3>Construction Delamain</h3>
+            <p>Fait avec React, Typescript, Firebase et CSS. Le site comprend une section "administrateur" qui permet à
+                l'administrateur d'effectuer des opérations CRUD depuis une interface conviviale.</p>
+            <ul>
+                <li><a href="https://beta2023.delamain.ca" target="_blank">Visiter le site</a></li>
+            </ul>
+        </div>
+    
+    
+        <div class="projet">
+            <h3>Peyabeille (cours de projet en équipe)</h3>
+            <p>Site transactionnel de vente de produits reliés au abeilles qui utilise React, NextJS, ExpressJS, Oracle
+                Database ainsi que MongoDB. Ce site contient lui aussi une interface de gestion qui permet d'ajouter, de
+                modifier et de supprimer des produits ainsi que de lire les demandes de contact envoyées par les clients.
+            </p>
+            <ul>
+                <li><a href="https://github.com/mxmvncnt/PEYAbeille" target="_blank">Voir le code source (fork publique)</a>
+                </li>
+            </ul>
+        </div>
+    
+    
+        <div class="projet">
+            <h3>Bitsteward</h3>
+            <p>Bitsteward est un client natif Linux pour le gestionnaire de mots de passe open-source Bitwarden adapté pour
+                l'environnement de bureau GNOME. Le projet est open source et utilise Python, GTK 4, LibAdwaita ainsi que la
+                fonctionnalité <a href="https://bitwarden.com/help/vault-management-api/" target="_blank">serve</a> du
+                logiciel <a href="https://bitwarden.com/help/cli/" target="_blank">bw</a> de Bitwarden pour servir en tant
+                qu'API. Le développement du programme à été majoritairement arrêté pour me concentrer sur mes études.</p>
+            <ul>
+                <li><a href="https://github.com/Bitsteward/bitsteward" target="_blank">Voir le code source</a></li>
+            </ul>
+        </div>
+    
+    
+        <div class="projet">
+            <h3>Hostile to JMP</h3>
+            <p>Hostile to JMP est un site visant à offrir une interface plus conviviale au <a
+                    href="https://wiki.soprani.ca/FAQ/Why%20isn%27t%20my%20number%20being%20accepted%20by%20an%20online%20service%3F"
+                    target="_blank">wiki</a> de <a href="https://jmp.chat/" target="_blank">JMP.Chat</a>, un service de
+                téléphonie IP open-source. Le site utilise HTML, CSS ainsi que Javascript pour l'interface et il utilise
+                Python pour récupérer les données CSV du site et les formatter sous le format JSON.</p>
+            <ul>
+                <li><a href="https://maximevincent.com/hostile-to-jmp/?#!" target="_blank">Visiter le site</a></li>
+                <li><a href="https://codeberg.org/MXMVNCNT/hostile-to-jmp" target="_blank">Voir le code source</a></li>
+            </ul>
+        </div>
+    
+        <div class="projet">
+            <h3>Numero_JMP</h3>
+            <p>
+                Projet fait avec Flutter et Dart qui vise à améliorer le processus de création d'une conversation avec le
+                service JMP.Chat. L'application permet de sélectionner des personnes à partir des contacts de l'appareil
+                pour permettre aux utilisateurs de créer des conversation et des groupes plus rapidement. L'idée de cette
+                application est née quand l'application officielle de JMP.Chat n'avait pas encore la fonctionnalité
+                permettant la création de conversations à partir des contacts de l'appareil.
+    
+            </p>
+            <ul>
+                <li><a href="https://codeberg.org/MXMVNCNT/Numero_JMP" target="_blank">Voir le code source et des captures d'écran</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <script src="./script.js"></script>
+</body>
+
+<footer>
+    <br>
+    <br>
+    Contact: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="70191e161f301d1108191d1506191e13151e045e131f1d">[email&#160;protected]</a>
+</footer>
+
+</html>
