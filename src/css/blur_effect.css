@@ -1,0 +1,30 @@
+:root {
+    --initial-blur: blur(10px);
+}
+
+.text-animation-initial-state {
+    opacity: 0;
+    filter: var(--initial-blur);
+}
+
+@keyframes unblur {
+    from {
+        opacity: 0;
+        filter: var(--initial-blur);
+    }
+
+    to {
+        filter: blur(0);
+        opacity: 1;
+    }
+}
+
+.animate_blur {
+    animation-name: unblur;
+    animation-duration: 1.5s;
+}
+
+.animate_padding {
+    padding: 0px !important;
+    transition: 1s;
+}

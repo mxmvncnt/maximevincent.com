@@ -1,0 +1,22 @@
+.disappear-initial-state {
+    opacity: 1;
+    filter: blur(0);
+}
+
+@keyframes disappear {
+    from {
+        opacity: 1;
+        filter: blur(0)
+    }
+
+    to {
+        opacity: 0;
+        filter: blur(10px);
+    }
+}
+
+.add_blur {
+    animation-name: disappear;
+    animation-duration: 0.7s;
+    opacity: 0;
+}
