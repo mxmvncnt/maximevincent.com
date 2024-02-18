@@ -2,7 +2,7 @@ const VARIATION = 200;
 
 const DEFAULT_TEXT = "No inner text found";
 
-function unblur(elementId) {
+function prepareAnimation(elementId) {
     let htmlElement = document.getElementById(elementId)
     let taggedText = "";
 
@@ -18,7 +18,11 @@ function unblur(elementId) {
 
     htmlElement.innerHTML = taggedText
 
-    let spans = htmlElement.children
+    return htmlElement.children
+}
+
+function unblur(elementId) {
+    let spans = prepareAnimation(elementId);
 
     for (let i = 0; i < spans.length; i++) {
         let span = spans[i];
@@ -42,22 +46,7 @@ function unblur(elementId) {
 }
 
 function disappear(elementId) {
-    let htmlElement = document.getElementById(elementId)
-    let taggedText = "";
-
-    let txt = DEFAULT_TEXT
-    if (document.getElementById(elementId) !== null) {
-        txt = document.getElementById(elementId).innerText;
-    }
-
-    for (let i = 0; i < txt.length; i++) {
-        const element = txt[i];
-        taggedText += `<span>${element}</span>`;
-    }
-
-    htmlElement.innerHTML = taggedText
-
-    let spans = htmlElement.children
+    let spans = prepareAnimation(elementId);
 
     for (let i = 0; i < spans.length; i++) {
         let span = spans[i];
