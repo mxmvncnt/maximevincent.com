@@ -1,0 +1,46 @@
+@font-face {
+	font-family: "MartianMono";
+	src: url("../src/assets/MartianMono.ttf");
+}
+
+@font-face {
+	font-family: "Inconsolata";
+	src: url("../src/assets/Inconsolata.ttf");
+}
+
+body,
+input {
+	font-family: Inconsolata;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: MartianMono;
+}
+
+:root {
+	color: #ff0000;
+	background-color: #000;
+	--accent-color: #ff0000;
+	--accent-foreground-color: #000;
+	--foreground-color: #ff0000;
+	--on-background-color: #000;
+	--faded-text-color: #ff0000;
+}
+
+a {
+	color: #ff0000;
+}
+
+a:hover {
+	color: #990000;
+}
+
+::selection {
+  color: black;
+  background: #990000;
+}

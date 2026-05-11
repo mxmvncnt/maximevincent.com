@@ -1,0 +1,36 @@
+@font-face {
+	font-family: "IBM3270";
+	src: url("./src/assets/IBM3270.ttf");
+	font-weight: normal;
+	font-style: normal;
+}
+
+body,
+input {
+	font-family: IBM3270;
+}
+
+input {
+    font-size: 16px;
+    caret-color: var(--accent-color);
+}
+
+input:focus {
+  outline: none;
+}
+
+:root {
+	--accent-color: #00ff00;
+	--accent-foreground-color: #000;
+	--foreground-color: var(--accent-color);
+	--on-background-color: var(--accent-foreground-color);
+	--faded-text-color: var(--accent-color);
+	--default-input-border: none;
+	--default-input-border-bottom: 2px solid var(--foreground-color);
+	color: var(--accent-color);
+	background-color: var(--accent-foreground-color);
+}
+
+a:hover {
+	color: #535bf2;
+}

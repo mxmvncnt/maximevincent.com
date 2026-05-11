@@ -1,0 +1,36 @@
+@font-face {
+	font-family: "DepartureMono";
+	src: url("./src/assets/DepartureMono.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: "Inconsolata";
+	src: url("../src/assets/Inconsolata.ttf");
+}
+
+body, input {
+	font-family: Inconsolata;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: DepartureMono;
+}
+
+:root {
+	color: #333333;
+	background-color: #fafafa;
+	--accent-color: #222;
+	--accent-foreground-color: #ccc;
+	--foreground-color: #ddd;
+	--on-background-color: #eee;
+	--faded-text-color: #666;
+}
+
+a:hover {
+	color: #535bf2;
+}
