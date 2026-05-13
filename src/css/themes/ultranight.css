@@ -1,11 +1,11 @@
 @font-face {
 	font-family: "MartianMono";
-	src: url("../src/assets/MartianMono.ttf");
+	src: url("../../assets/MartianMono.ttf");
 }
 
 @font-face {
 	font-family: "Inconsolata";
-	src: url("../src/assets/Inconsolata.ttf");
+	src: url("../../assets/Inconsolata.ttf");
 }
 
 body,
