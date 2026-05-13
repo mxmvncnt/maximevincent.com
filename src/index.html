@@ -6,6 +6,11 @@
         <link rel="stylesheet" href="./css/style.css" />
         <link rel="stylesheet" href="./css/blur_effect.css" />
         <link rel="stylesheet" href="./css/disappear_effect.css" />
+
+        <script>
+            const saved = localStorage.getItem('theme') || 'default';
+            document.write(`<link rel="stylesheet" href="./css/themes/${saved}.css">`);
+        </script>
         <title>Maxime Vincent</title>
     </head>
 
@@ -203,5 +208,15 @@
         <a href="/en">English</a><br />
         <br />
         Contact: info@maximevincent.com
+        <br />
+        <br />
+        <label for="theme-selector">Theme:</label>
+        <select id="theme-selector" name="theme-selector" onchange="switchTheme(this.value)">
+            <option value="default">default</option>
+            <option value="ultranight">ultranight</option>
+            <option value="as400">as400</option>
+            <option value="receipt">receipt</option>
+            <option value="semiretro">semiretro</option>
+        </select>
     </footer>
 </html>

@@ -71,3 +71,13 @@ function restartAnimation(elementId) {
 
     disappear(elementId)
 }
+
+function switchTheme(name) {
+    document.querySelector('link[href*="themes"]').href = `./css/themes/${name}.css`;
+    localStorage.setItem('theme', name);
+}
+
+window.addEventListener('DOMContentLoaded', () => {
+    const saved = localStorage.getItem('theme');
+    if (saved) document.getElementById('theme-selector').value = saved;
+});
